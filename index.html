@@ -3,38 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calcular IMC</title>
+    <title>Calculadora de IMC</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="principal">
+    <div class="container">
       <h1>Calculadora de IMC</h1>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse fuga
         quasi, illum doloribus vel tenetur voluptatibus velit!
       </p>
-    </div>
-    <main>
-      <div class="caixaCalculadora">
-        <p class="cabecalho">Calculadora de IMC</p>
-        <div class="calcular">
-          <p>Peso (kg)</p>
-          <input type="number" />
-          <p>Altura (m)</p>
-          <input type="number" />
-          <button>Calcular IMC</button>
-          <button>Limpar</button>
+      <p class="cabecalho">Calculadora de IMC</p>
+      <!--------------------------------------------->
+      <div class="card">
+        <div class="formulario">
+          <label for="inome">Peso (kg)</label>
+          <input type="number" id="inome" placeholder="Ex: 70" required />
+          <label for="ialtura">Altura (m)</label>
+          <input type="number" id="ialtura" placeholder="Ex: 1.70" required />
+          <div class="botoes">
+            <button onclick="calcularIMC()">Calcular IMC</button>
+            <button onclick="limparCampos()">Limpar</button>
+          </div>
         </div>
-        <div class="exibirResultado">
+        <!--------------------------------------------->
+        <div class="exibirResultado" id="resultado">
           <p><span>0.0</span></p>
           <p>abaixo do peso</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
-            itaque!
-          </p>
+          <p>Informe os dados para confirmar</p>
           <p>IMC = Peso (kg) = Altura (m)</p>
         </div>
-        <div class="classificacaoIMC">
+      </div>
+      <!--------------------------------------------->
+      <div class="tabelaIMC">
+        <p>Classificação do IMC</p>
+        <div class="faixas">
           <div class="pesoAbaixo">
             <p>Abaixo do peso</p>
             <p>Menor que 18.5</p>
@@ -53,6 +56,7 @@
           </div>
         </div>
       </div>
-    </main>
+      <!--------------------------------------------->
+    </div>
   </body>
 </html>
