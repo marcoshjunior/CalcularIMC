@@ -6,10 +6,39 @@ body {
   padding: 0;
   text-align: center;
 }
-
 /* --- Container principal da página --- */
 .container {
   max-width: 800px; /* Limita largura para boa leitura */
   margin: auto; /* Centraliza horizontalmente */
   padding: 20px;
+}
+/* --- Cartão que agrupa formulário + resultado --- */
+.card {
+  display: flex; /* Coloca filhos lado a lado */
+  justify-content: space-between; /* Espaço uniforme entre filhos */
+  gap: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+}
+/* --- Coluna do formulário --- */
+.formulario {
+  flex: 1; /* Ocupa metade (ou mais) do espaço */
+  min-width: 250px;
+  text-align: left;
+}
+/* Rótulo dos inputs */
+.formulario label {
+  display: block; /* Cada label em sua própria linha */
+  margin-top: 10px;
+}
+/* Campos de entrada numérica */
+.formulario input {
+  width: 96%; /* Preenche toda a coluna */
+  padding: 8px; /* Espaço interno confortável */
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc; /* Borda cinza clara */
 }
