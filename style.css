@@ -42,3 +42,27 @@ body {
   border-radius: 8px;
   border: 1px solid #ccc; /* Borda cinza clara */
 }
+/* --- Agrupamento dos botões Calcular / Limpar --- */
+.botoes {
+  margin-top: 15px;
+}
+/* Botões genéricos dentro do grupo */
+.botoes button {
+  padding: 10px 15px;
+  margin-right: 10px;
+  border: none; /* Remove borda nativa */
+  border-radius: 8px;
+  cursor: pointer;
+}
+.botoes button:hover {
+  background-color: #ccc;
+  transition-duration: 0.1s;
+}
+/* --- Coluna com o resultado do cálculo --- */
+.exibirResultado {
+  flex: 1; /* Ocupa outra metade do espaço */
+  min-width: 250px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+}
