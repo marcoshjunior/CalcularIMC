@@ -66,6 +66,7 @@ body {
   border-radius: 8px;
   padding: 20px;
   text-align: center;
+  font-weight: bold;
 }
 /* --- Seção da tabela de classificação --- */
 .tabelaIMC {

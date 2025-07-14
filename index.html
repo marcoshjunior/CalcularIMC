@@ -17,7 +17,7 @@
       <div class="card">
         <div class="formulario">
           <label for="inome">Peso (kg)</label>
-          <input type="number" id="inome" placeholder="Ex: 70" required />
+          <input type="number" id="ipeso" placeholder="Ex: 70" required />
           <label for="ialtura">Altura (m)</label>
           <input type="number" id="ialtura" placeholder="Ex: 1.70" required />
           <div class="botoes">
@@ -26,11 +26,10 @@
           </div>
         </div>
         <!--------------------------------------------->
-        <div class="exibirResultado" id="resultado">
-          <p><span>0.0</span></p>
-          <p>abaixo do peso</p>
-          <p>Informe os dados para confirmar</p>
-          <p>IMC = Peso (kg) = Altura (m)</p>
+        <div class="exibirResultado">
+          <p><span id="resultado">0.0</span></p>
+          <p><span id="tipoDoPeso">abaixo do peso</span></p>
+          <p>IMC = Peso (kg) + Altura (m)</p>
         </div>
       </div>
       <!--------------------------------------------->
