@@ -65,4 +65,39 @@ body {
   background-color: #f9f9f9;
   border-radius: 8px;
   padding: 20px;
+  text-align: center;
+}
+/* --- Seção da tabela de classificação --- */
+.tabelaIMC {
+  margin-top: 30px;
+}
+/* Agrupamento horizontal das faixas de classificação */
+.faixas {
+  display: flex; /* Coloca faixas lado a lado */
+  justify-content: space-between; /* Espaç. uniforme */
+  flex-wrap: wrap; /* Quebra linha em telas menores */
+  gap: 10px;
+}
+/* Estilo base de cada faixa */
+.faixa {
+  flex: 1; /* Todas ocupam larguras iguais */
+  min-width: 150px; /* Evita faixas muito estreitas */
+  padding: 15px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold; /* Destaque no texto */
+}
+/* Cores específicas para cada classificação */
+.azul {
+  background-color: #6ca0dc;
+}
+.verde {
+  background-color: #4caf50;
+}
+.amarelo {
+  background-color: #ffc107;
+  color: black;
+}
+.vermelho {
+  background-color: #f44336;
 }
