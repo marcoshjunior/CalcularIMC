@@ -34,3 +34,12 @@ function calcularIMC() {
     tipoDoPeso.style.color = "#f44336";
   }
 }
+
+function limparCampos() {
+  document.getElementById("ipeso").value = "";
+  document.getElementById("ialtura").value = "";
+  document.getElementById("resultado").innerHTML = "0.0";
+  document.getElementById("tipoDoPeso").innerHTML = "abaixo do peso";
+  resultado.style.color = "#000";
+  tipoDoPeso.style.color = "#000";
+}
